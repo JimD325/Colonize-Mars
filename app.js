@@ -1,6 +1,17 @@
 'use strict'
 
-let test ="my test variable"
+let test ="my test variable";
+let answer = "";
+
+while (answer !=3){
+    answer =prompt ("gravity is how many times weaker on mars")
+    if(answer === '3'){
+    alert ("Correct")
+    }
+    else {
+        alert ("Incorrect. Hint: You are three times lighter on Mars than on Earth.")
+    }
+}
 
 function makeGreeting(){
     let userName = getUserName();
@@ -39,3 +50,9 @@ function bodyweight(){
     return bodyweight;
 }
 
+function displayArnolds(){
+    let number = prompt("how many wheezing arnolds do you give this site?");
+    for (let arnold = 1; arnold <= number; arnold++){
+        document.write('<img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2020/01/total-recall-eyes-bugging-out-scene.jpg?q=50&fit=crop&w=943&h=500&dpr=1.5"/>');
+    }
+}
